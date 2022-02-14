@@ -1,4 +1,4 @@
-##This is a template I have created using HTML and CSS. It has the login page as index.html and the landing page as main.html
+#This is a template I have created using HTML and CSS. It has the login page as index.html and the landing page as main.html
 
 This is the Login Page
 
