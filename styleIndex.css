@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image:url(resources/images/background/login_background.jpg);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+.header{
+    z-index: 3;
+    position: absolute;
+    top: 7vh;
+    left: 2vw;
+}
+#p1{
+    color: white;
+    font-size: 55px;
+    opacity: 0.8;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 4;
+    animation: traveller1 0.8s ease-out;
+}
+#p2{
+    color: white;
+    font-size: 55px;
+    opacity: 0.8;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 4;
+    /* left: -100vw; */
+    animation: traveller2 1.8s ease-out ;
+}
+/* #p2::after{
+    left: 0vw;
+} */
+@keyframes traveller1 {
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translate(0vw);
+    }
+}
+@keyframes traveller2 {
+    from{
+        transform: translateX(-150vw);
+    }
+    to{
+        transform: translate(0vw);
+    }
+}
+.form{
+    position: absolute;
+    z-index: 3;
+    top: 42vh;
+    left: 41vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.uname{
+    margin: 15px 0;
+    width: 17vw;
+    height: 4.5vh;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 0.25vh 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+.upass{
+    margin: 15px 0;
+    width: 17vw;
+    height: 4.5vh;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 0.25vh 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+.loginSubmit{
+    background-color: rgba(228, 31, 20, 0.84);
+    color: white;
+    border: none;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    width: 6.5vw;
+    height: 4.5vh;
+    border-radius: 20px;
+}
+.loginSubmit a{
+    text-decoration: none;
+    color: white;
+}
+
